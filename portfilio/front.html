@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Deepak — Portfolio</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container nav-row">
+				<a class="logo" href="#">Deepak</a>
+				<button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+				<nav class="site-nav" id="site-nav">
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact</a>
+					<a href="resume.pdf" class="cta" download>Resume</a>
+				</nav>
+				<div id="tech-strip" class="tech-strip" aria-hidden="true">
+					<span class="tech-badge">HTML</span>
+					<span class="tech-badge">CSS</span>
+					<span class="tech-badge">JavaScript</span>
+					<span class="tech-badge">Python</span>
+					<span class="tech-badge">Flask</span>
+					<span class="tech-badge">Django</span>
+					<span class="tech-badge">MongoDB</span>
+					<span class="tech-badge">SQL</span>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container hero-grid">
+					<div class="hero-content reveal-on-scroll">
+						<h1>Hi, I'm Deepak.</h1>
+						<p class="lead">I build clean, responsive websites and web apps.</p>
+						<p><a class="btn" href="#projects">See my work</a></p>
+					</div>
+				<div class="hero-image reveal-on-scroll">
+					<img src="IMG_20251211_153842.jpg" alt="Deepak - Full Stack Developer" />
+				</div>
+				</div>
+			</section>
+
+			<section id="about" class="section about">
+				<div class="container">
+					<div class="about-grid">
+						<div class="about-title">
+							<h1 class="big-title">FULL<br>STACK<br>DEVELOPER</h1>
+							<p class="subtitle">Python • JavaScript</p>
+						</div>
+						<div class="about-content">
+							<p>I am a passionate <span class="highlight">Full Stack Developer</span> specializing in MERN, TypeScript, GraphQL, and Next.js. I excel at designing clean backend architectures and implementing secure authentication.</p>
+							<p>I have built multiple full-stack projects including an <span class="highlight">IMDB clone</span>, a <span class="highlight">weather platform</span>, and a complete <span class="highlight">e-commerce system</span>. Through these, I have gained skills in API development, real-time features, and modern UI/UX practices.</p>
+							<p>I am constantly improving my problem-solving skills through DSA and exploring design fundamentals. I am looking for an opportunity to contribute to <span class="highlight">impactful projects</span> and grow as a developer.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="section projects">
+				<div class="container">
+					<h2>Projects</h2>
+					<div class="grid">
+						<article class="card">
+							<h3>Project One</h3>
+							<p>Short description of project one. Technologies: HTML, CSS, JS.</p>
+							<p><a class="link" href="#">View details</a></p>
+						</article>
+
+						<article class="card">
+							<h3>Project Two</h3>
+							<p>Short description of project two. Technologies: React, Node.</p>
+							<p><a class="link" href="#">View details</a></p>
+						</article>
+
+						<article class="card">
+							<h3>Project Three</h3>
+							<p>Short description of project three. Technologies: API, DB.</p>
+							<p><a class="link" href="#">View details</a></p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="education" class="section education">
+				<div class="container">
+					<h2>Education</h2>
+					<div class="education-list">
+						<div class="education-item">
+							<h3>UG Degree</h3>
+							<p class="institution">Vysya College</p>
+							<p class="duration">2022 - 2025</p>
+							<p class="description">Bachelor's degree in Software Development / Computer Science</p>
+						</div>
+						<div class="education-item">
+							<h3>12th Grade</h3>
+							<p class="institution">St. Paul's Higher Secondary School</p>
+							<p class="duration">2021 - 2022</p>
+						</div>
+						<div class="education-item">
+							<h3>10th Grade</h3>
+							<p class="institution">St. Paul's Higher Secondary School</p>
+							<p class="duration">2019 - 2020</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Send me a message using the form below or email me at <a href="mailto:spdeepakkumar496@gamil.com">spdeepakkumar496@gamil.com</a>.</p>					<form id="contact-form" class="contact-form" novalidate>
+						<label>
+							Name
+							<input type="text" name="name" id="name" required />
+						</label>
+						<label>
+							Email
+							<input type="email" name="email" id="email" required />
+						</label>
+						<label>
+							Message
+							<textarea name="message" id="message" rows="6" required></textarea>
+						</label>
+						<div class="form-row">
+							<button type="submit" class="btn">Send message</button>
+							<div id="form-status" class="form-status" aria-live="polite"></div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		>
+						
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-content">
+				<p>© <span id="year"></span> Deepak — Built with HTML, CSS & JavaScript</p>
+				<a href="https://wa.me/916379490223" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+			</div>
+		</div>
+	</footer>		<section id="resume-section" class="section resume">
+			<div class="container">
+				<h2>Resume</h2>
+				<p>Download my resume (PDF):</p>
+				<p><a class="btn" href="resume.pdf" download>Download Resume (PDF)</a></p>
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>
